@@ -9,23 +9,85 @@ h1 {
     margin: 0px;
 }
 
+a {
+    color: #900;
+}
+
 header {
-    height: auto;
+    padding-bottom: 20px;
+    height: 170px;
     width: 100%;
     background-color: dimgray;
 }
 
 header h1 {
+    padding: 20px 0px 30px 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
     color: #fff;
+}
+
+.git {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 
 nav ul li {
     list-style: none;
+    display: inline-block;
 }
 
 nav ul li a {
-    line-height: 1.5em;
+    padding-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
     font-size: 1.2em;
-    color: #fff;
+    color: #999;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:after{
+    content: "|";
+    padding-left: 20px;
+    color: chartreuse;
+}
+
+nav a:hover {
+    font-size: 1.5em;
+    color: #fff;
+    
+}
+
+a[href="#whatIsGit"] {
+    color: #fff;
+    text-shadow: 1px 1px 10px #fff;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+section h2:before {
+    content: "| ";
+    color: chartreuse;
 }
